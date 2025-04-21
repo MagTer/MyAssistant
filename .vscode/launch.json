@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to Android Emulator",
+      "type": "android",
+      "request": "attach",
+      "port": 8600,
+      "timeout": 30000
+    }
+  ]
+}
