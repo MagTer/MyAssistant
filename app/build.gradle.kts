@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -36,10 +38,17 @@ android {
 }
 
 dependencies {
+    implementation(project(":feature:ui")) // Depend on the UI feature module
+    implementation(project(":core:model")) // Example: App might need core models
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
+
+    // Remove direct UI dependencies, they are now in :feature:ui
+    // implementation(libs.androidx.core.ktx)
+    // implementation(libs.androidx.appcompat)
+    // implementation(libs.material)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
