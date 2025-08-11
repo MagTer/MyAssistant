@@ -1,15 +1,9 @@
-
 plugins {
-    kotlin("jvm")
+    id("myassistant.kotlin.jvm")
     // Potentially add Hilt plugin if UseCases need injection
-    // alias(libs.plugins.hilt)
-    // alias(libs.plugins.ksp)
+    // id("com.google.dagger.hilt.android")
+    // id("com.google.devtools.ksp")
 }
-
-// Configure Kotlin options if needed
-// kotlin {
-//     jvmToolchain(11)
-// }
 
 dependencies {
     implementation(project(":core:model")) // Domain uses models

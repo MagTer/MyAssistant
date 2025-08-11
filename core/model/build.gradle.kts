@@ -1,12 +1,6 @@
-
 plugins {
-    kotlin("jvm")
+    id("myassistant.kotlin.jvm")
 }
-
-// Configure Kotlin options if needed
-// kotlin {
-//     jvmToolchain(11)
-// }
 
 dependencies {
     implementation(libs.kotlin.stdlib)
