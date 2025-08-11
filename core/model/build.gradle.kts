@@ -1,6 +1,6 @@
 
 plugins {
-    alias(libs.plugins.kotlin.jvm)
+    kotlin("jvm")
 }
 
 // Configure Kotlin options if needed
