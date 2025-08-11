@@ -1,6 +1,5 @@
-
 plugins {
-    alias(libs.plugins.kotlin.jvm)
+    kotlin("jvm")
     // Potentially add Hilt plugin if UseCases need injection
     // alias(libs.plugins.hilt)
     // alias(libs.plugins.ksp)

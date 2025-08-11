@@ -20,10 +20,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "MyAssistant"
-include(":app")
 include(":core:model")
 include(":core:domain")
-include(":core:data")
-include(":feature:ui")
-include(":feature:speech")
-include(":feature:llm")
