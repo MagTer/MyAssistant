@@ -1,7 +1,5 @@
-
 plugins {
-    id("com.android.library")
-    id("org.jetbrains.kotlin.android")
+    id("myassistant.android.library")
     id("com.google.dagger.hilt.android")
     id("com.google.devtools.ksp")
     id("org.jetbrains.kotlin.plugin.compose")
@@ -9,24 +7,13 @@ plugins {
 
 android {
     namespace = "com.magter.myassistant.feature.ui"
-    compileSdk = 35
 
     defaultConfig {
-        minSdk = 35
-        // targetSdk = 35 // Not needed for library modules
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildFeatures {
         compose = true
-    }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-    kotlinOptions {
-        jvmTarget = "11"
     }
 }
 

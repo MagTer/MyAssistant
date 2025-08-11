@@ -1,13 +1,7 @@
-
 plugins {
-    kotlin("jvm")
+    id("myassistant.kotlin.jvm")
     // Potentially add Hilt/KSP if repositories need injection
 }
-
-// Configure Kotlin options if needed
-// kotlin {
-//     jvmToolchain(11)
-// }
 
 dependencies {
     implementation(project(":core:model"))
