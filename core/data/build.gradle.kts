@@ -1,6 +1,6 @@
 
 plugins {
-    alias(libs.plugins.kotlin.jvm)
+    kotlin("jvm")
     // Potentially add Hilt/KSP if repositories need injection
 }
 
