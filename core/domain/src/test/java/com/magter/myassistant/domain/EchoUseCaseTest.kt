@@ -9,12 +9,12 @@ class EchoUseCaseTest {
     fun `invoke should return the same input string`() {
         // Arrange
         val input = "Hello"
-        // val useCase = EchoUseCase() // Assume EchoUseCase exists
+        val useCase = EchoUseCase()
 
         // Act
-        // val result = useCase(input)
+        val result = useCase(input)
 
         // Assert
-        assertEquals("World", input) // Failing assertion
+        assertEquals(input, result)
     }
 }
