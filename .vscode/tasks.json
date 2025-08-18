@@ -11,7 +11,7 @@
     {
       "label": "test",
       "type": "shell",
-      "command": "./gradlew testDebug",
+      "command": "./gradlew test",
       "problemMatcher": ["$javac"],
       "group": "test"
     }

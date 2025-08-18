@@ -23,4 +23,4 @@ jobs:
             ~/.gradle/wrapper
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
       - name: Run build
-        run: ./gradlew --no-daemon lint detekt testDebug assembleDebug
+        run: ./gradlew --no-daemon lint detekt test assembleDebug
