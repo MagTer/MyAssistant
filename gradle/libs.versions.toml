@@ -14,6 +14,8 @@ material = "1.12.0"
 core-ktx = "1.16.0"
 activity-compose = "1.10.1"
 lifecycle-viewmodel-compose = "2.8.3"
+# Static analysis
+detekt = "1.23.8"
 # Add Kotest, MockK, Robolectric versions if needed later
 
 [libraries]
@@ -47,3 +49,4 @@ hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" } # For non-Android modules
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" } # Use Kotlin version for Compose compiler plugin
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
