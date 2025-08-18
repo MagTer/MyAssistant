@@ -2,8 +2,8 @@
 
 **Build & Test Commands**
 * Build debug APK: `./gradlew :app:assembleDebug`
-* Run JVM unit tests: `./gradlew :core:testDebug`
-* Run all checks (lint, detekt, coverage): `./gradlew lint detekt jacocoTestReport`
+* Run all unit tests: `./gradlew test`
+* Run static analysis & coverage: `./gradlew lint detekt jacocoTestReport`
 
 **Architecture Rules**
 1. Keep the **domain layer (`core/domain`) Android‑free**; no `android.*` imports.
