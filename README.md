@@ -7,3 +7,11 @@ This repository is the **starting scaffolding** for an AI‑developed, voice‑f
   * `.github/copilot-instructions.md` (global coding conventions)
   * `.vscode/tasks.json` (build / test commands the agent can run)
 * Continuous Integration kicks in via GitHub Actions on every PR to ensure tests & lints stay green.
+
+## Building
+
+`./gradlew build` builds the pure Kotlin modules out of the box. Android
+modules (`app`, `feature:*`) are included only when a local Android SDK
+is present. Provide the SDK path via an `ANDROID_HOME` environment
+variable or a `local.properties` file with `sdk.dir=/path/to/sdk` to
+compile the Android code.
